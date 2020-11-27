@@ -1,0 +1,25 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class Subcategory extends Model
+{
+    use HasFactory;
+
+    public function category(){
+        $this->belongsTo('App\Models\Category');
+    }
+
+
+    public function createSubcategory(){
+        $posts = Subcategory::factory()
+            ->count(15)
+            ->forCategory([
+                'name' => 'Nueva Categoria',
+            ])
+            ->create();
+    }
+}

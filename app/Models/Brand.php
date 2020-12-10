@@ -11,8 +11,8 @@ class Brand extends Model
     use HasFactory;
 
     public function createBrands(){
-        Brand::factory()->count(1500)->create();
+        Brand::factory()->count(10)->create();
 
-        echo 'creadas las 1500 marcars';
+        echo 'creadas las 10 marcas';
     }
 }

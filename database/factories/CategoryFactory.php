@@ -23,7 +23,7 @@ class CategoryFactory extends Factory
     {
         return [
             //
-            'name'=>$this->faker->unique()->text
+            'name'=>$this->faker->unique()->company
         ];
     }
 }

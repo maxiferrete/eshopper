@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
+use DB;
 
 class ConditionSeeder extends Seeder
 {
@@ -14,5 +15,11 @@ class ConditionSeeder extends Seeder
     public function run()
     {
         //
+        DB::table('conditions')->insert([
+            'name' => 'Nuevo'
+        ]);
+        DB::table('conditions')->insert([
+            'name' => 'Usado'
+        ]);
     }
 }

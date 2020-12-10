@@ -23,7 +23,7 @@ class SubcategoryFactory extends Factory
     {
         return [
             //
-            'name'=> $this->faker->company,
+            'name'=> $this->faker->unique()->company,
         ];
     }
 }

@@ -4,6 +4,7 @@
 @section('botonAgregar', "New Product")
 @section('rutaCrear'){{ route('products.create') }}@endsection
 @section('listado')
+
 <table class="table table-striped table-hover">
     <thead>
         <tr>
